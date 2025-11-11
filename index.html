@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Táxi Digital - Aplicativos de Mobilidade White Label</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cabeçalho e Navegação -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#"><img src="images/logo.png" alt="Táxi Digital Logo"></a>
+            </div>
+            <nav>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-menu">
+                    <li class="dropdown">
+                        <a href="#">Produtos</a>
+                        <div class="dropdown-content">
+                            <a href="#">Aplicativo de Mobilidade Personalizado</a>
+                            <a href="#">Gestão de Frotas</a>
+                            <a href="#">Sistema de Pagamento</a>
+                            <a href="#">Integrações e Parceiros</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Indústrias</a>
+                        <div class="dropdown-content">
+                            <a href="#">Empresas de Táxi</a>
+                            <a href="#">Grupos de Motoristas</a>
+                            <a href="#">Frotas Corporativas</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Recursos</a>
+                        <div class="dropdown-content">
+                            <a href="#">Blog</a>
+                            <a href="#">Estudos de Caso</a>
+                            <a href="#">Documentação</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Sobre</a>
+                        <div class="dropdown-content">
+                            <a href="#">Nossa História</a>
+                            <a href="#">Equipe</a>
+                            <a href="#">Contato</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-buttons">
+                <a href="#" class="login-btn">Login</a>
+                <a href="#" class="demo-btn">Agendar Demo</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-tag">APLICATIVO DE MOBILIDADE WHITE LABEL</div>
+                    <h1>Software mais inteligente.<br>Equipes mais felizes.<br>Resultados melhores.</h1>
+                    <p>A única solução de aplicativo de mobilidade white label orientada por resultados para empresas de táxi. As ferramentas que você precisa, as integrações que você deseja e o melhor suporte do setor.</p>
+                    <div class="hero-buttons">
+                        <a href="#" class="primary-btn">Agendar Demo</a>
+                        <a href="#" class="secondary-btn">Saiba Mais</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="images/celular.png" alt="Aplicativo Táxi Digital">
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave"></div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="testimonial-slider">
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <p>"A Táxi Digital tornou simples para mim visualizar todos os motoristas e corridas em tempo real, especialmente quando os operadores estão gerenciando as solicitações dos passageiros."</p>
+                        <div class="testimonial-author">
+                            <h4>João Silva</h4>
+                            <p>Proprietário da Cooperativa de Táxi Estrela</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <p>"Vindo de plataformas que 'perdiam' dados e registros de corridas, eu era um proprietário de empresa muito desconfiado. A Táxi Digital me livrou desses medos. Ter confiança nesta equipe é minha maior conquista, pois posso focar meu tempo em outras áreas e sei que a Táxi Digital está comigo."</p>
+                        <div class="testimonial-author">
+                            <h4>Maria Oliveira</h4>
+                            <p>Proprietária, Táxi Executivo Premium</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <p>"A integração da Táxi Digital em nossa frota de táxis economizou um tempo valioso para os gerentes e despachantes, simplificando o processo de coleta e análise de dados."</p>
+                        <div class="testimonial-author">
+                            <h4>Carlos Santos</h4>
+                            <p>Gerente de Operações, Táxi Municipal</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <p>"Integrar a Táxi Digital em nossa operação foi uma experiência transformadora. Revolucionou nossa abordagem de coleta de dados, rastreamento de progresso e comunicação com os clientes."</p>
+                        <div class="testimonial-author">
+                            <h4>Ana Pereira</h4>
+                            <p>Proprietária da Associação de Motoristas Unidos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Confiança -->
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const logosContainer = document.querySelector('.trusted-logos');
+        const logos = document.querySelectorAll('.trusted-logos .logo-item');
+        const visible = 4; // Quantos logos aparecem ao mesmo tempo
+        const total = logos.length;
+        let index = 0;
+        let logoWidth = logos[0].offsetWidth;
+        let animationId;
+
+        // Clona os primeiros logos para criar efeito infinito
+        for (let i = 0; i < visible; i++) {
+            let clone = logos[i].cloneNode(true);
+            logosContainer.appendChild(clone);
+        }
+
+        // Ajusta o container para o layout horizontal
+        logosContainer.style.display = "flex";
+        logosContainer.style.width = `${(total + visible) * (100 / visible)}%`;
+        logosContainer.style.transition = "none";
+        logosContainer.style.transform = "translateX(0)";
+
+        // Animação suave e constante usando requestAnimationFrame
+        let currentTranslate = 0;
+        const speed = 0.5; // px por frame, ajuste para mais rápido ou mais lento
+
+        function animate() {
+            currentTranslate -= speed;
+            // Quando passar a largura de um logo, reseta para o início
+            if (Math.abs(currentTranslate) >= logoWidth) {
+                currentTranslate += logoWidth;
+                logosContainer.appendChild(logosContainer.firstElementChild);
+            }
+            logosContainer.style.transform = `translateX(${currentTranslate}px)`;
+            animationId = requestAnimationFrame(animate);
+        }
+
+        // Espera as imagens carregarem para pegar a largura correta
+        window.addEventListener('load', () => {
+            logoWidth = logos[0].offsetWidth;
+            animate();
+        });
+    });
+    </script>
+    
+    <section class="trusted">
+        <div class="container">
+            <h2>Confiado por estas incríveis organizações todos os dias.</h2>
+            <div class="trusted-logos">
+                <div class="logo-item"><img src="images/logo1.png" alt="Cooperativa de Táxi Metropolitano"></div>
+                <div class="logo-item"><img src="images/logo1.png" alt="Associação de Motoristas Autônomos"></div>
+                <div class="logo-item"><img src="images/logo1.png" alt="Táxi Executivo Premium"></div>
+                <div class="logo-item"><img src="images/logo1.png" alt="Táxi Acessível Brasil"></div>
+                <div class="logo-item"><img src="images/logo1.png" alt="Frota Corporativa Express"></div>
+                 <div class="logo-item"><img src="images/logo1.png" alt="Táxi Acessível Brasil"></div>
+                <div class="logo-item"><img src="images/logo1.png" alt="Frota Corporativa Express"></div>
+                 <div class="logo-item"><img src="images/logo1.png" alt="Táxi Acessível Brasil"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destaque do Produto -->
+    <section class="product-highlight">
+        <div class="highlight-tag">DESBLOQUEIE SEUS SUPERPODERES</div>
+        <div class="container">
+            <h2>Software de mobilidade que trabalha com você, não contra você.</h2>
+            <p>Uma plataforma completa que apoia toda a sua operação de mobilidade e mantém você no controle. Use-a integralmente ou integre com as ferramentas que funcionam melhor para você.</p>
+            <div class="product-image">
+                <img src="images/product-dashboard.png" alt="Dashboard Táxi Digital">
+            </div>
+        </div>
+    </section>
+
+    <!-- Funcionalidades -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card blue">
+                    <div class="feature-icon">
+                        <img src="images/icon-app.png" alt="Ícone Aplicativo">
+                    </div>
+                    <h3>Aplicativo de Mobilidade Personalizado</h3>
+                    <p>Aplicativo white label com sua marca, design personalizado, funcionalidades robustas de rastreamento em tempo real e interface intuitiva para motoristas e passageiros, tudo isso com muito mais.</p>
+                </div>
+                <div class="feature-card pink">
+                    <div class="feature-icon">
+                        <img src="images/icon-fleet.png" alt="Ícone Frota">
+                    </div>
+                    <h3>Gestão de Frotas</h3>
+                    <p>Conformidade, agendamento avançado, painéis de inteligência de negócios, gerenciamento de motoristas e veículos, e muito mais.</p>
+                </div>
+                <div class="feature-card green">
+                    <div class="feature-icon">
+                        <img src="images/icon-payment.png" alt="Ícone Pagamento">
+                    </div>
+                    <h3>Sistema de Pagamento</h3>
+                    <p>Maximize ganhos, prevenção de fraudes, transparência contábil, conformidade fiscal irrestrita, e muito mais.</p>
+                </div>
+                <div class="feature-card purple">
+                    <div class="feature-icon">
+                        <img src="images/icon-integration.png" alt="Ícone Integração">
+                    </div>
+                    <h3>Integrações e Parceiros</h3>
+                    <p>Aproveite a força da Táxi Digital para conectar seus aplicativos e tecnologias, eliminando lacunas entre suas operações e sistemas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diferenciais -->
+    <section class="differentials">
+        <div class="container">
+            <div class="differentials-content">
+                <div class="differentials-text">
+                    <h2>Grande o suficiente para fazer tudo.<br>Pequeno o suficiente para se importar.</h2>
+                    <p>Agendamento, faturamento, coleta de dados e muito mais atendem à assinatura de cuidado e simplicidade da Táxi Digital. Porque grande não significa complicado.</p>
+                    <ul class="benefits-list">
+                        <li>
+                            <div class="benefit-icon"><i class="fas fa-check-circle"></i></div>
+                            <div class="benefit-text">Automatize o agendamento, garanta conformidade, otimize recursos e maximize a lucratividade.</div>
+                        </li>
+                        <li>
+                            <div class="benefit-icon"><i class="fas fa-check-circle"></i></div>
+                            <div class="benefit-text">Coleta de dados em tempo real significa sem mais atualizações e mudanças instantâneas nas operações.</div>
+                        </li>
+                        <li>
+                            <div class="benefit-icon"><i class="fas fa-check-circle"></i></div>
+                            <div class="benefit-text">Totalmente seguro, construído para proteger o que mais importa: seus dados e a privacidade dos seus clientes.</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="differentials-image">
+                    <img src="images/dashboard-view.png" alt="Dashboard Táxi Digital">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipe -->
+    <section class="team">
+        <div class="team-tag">NÓS VALORIZAMOS NOSSOS PARCEIROS!</div>
+        <div class="container">
+            <h2>Uma equipe que fala a sua língua. Especialistas reais. Suporte real.</h2>
+            <p>Apoiados por alguns dos profissionais mais talentosos do setor de mobilidade, nossa equipe prospera com o seu sucesso. Mobilidade não é apenas o que fazemos, é quem somos.</p>
+            <div class="team-images">
+                <div class="team-grid">
+                    <div class="team-member"><img src="images/team1.png" alt="Membro da Equipe"></div>
+                    <div class="team-member"><img src="images/team2.png" alt="Membro da Equipe"></div>
+                    <div class="team-member"><img src="images/team3.png" alt="Membro da Equipe"></div>
+                    <div class="team-member"><img src="images/team4.png" alt="Membro da Equipe"></div>
+                    <div class="team-member"><img src="images/team5.png" alt="Membro da Equipe"></div>
+                    <div class="team-member"><img src="images/team6.png" alt="Membro da Equipe"></div>
+                    <div class="team-member"><img src="images/team7.png" alt="Membro da Equipe"></div>
+                    <div class="team-member"><img src="images/team8.png" alt="Membro da Equipe"></div>
+                </div>
+            </div>
+            <div class="team-button">
+                <a href="#" class="primary-btn">A História da Táxi Digital</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- História -->
+    <section class="story">
+        <div class="container">
+            <div class="story-content">
+                <div class="story-text">
+                    <h2>A História da Táxi Digital</h2>
+                    <p>A Táxi Digital nasceu da necessidade de transformar a maneira como empresas de táxi e grupos de motoristas gerenciam suas operações. Fundada por especialistas em tecnologia e mobilidade urbana, nossa empresa se dedica a criar soluções white label que permitem que nossos parceiros mantenham sua identidade enquanto oferecem experiências digitais de alta qualidade.</p>
+                    <p>Nossa jornada começou com a simples ideia de democratizar o acesso à tecnologia de ponta para empresas de táxi tradicionais, permitindo que competissem em igualdade com as grandes plataformas de mobilidade. Hoje, nossa plataforma atende dezenas de empresas em todo o Brasil, cada uma com sua própria marca e identidade, mas todas com a mesma tecnologia robusta e confiável por trás.</p>
+                    <p>Acreditamos que o futuro da mobilidade urbana está na colaboração entre a tradição do serviço de táxi e a inovação tecnológica, criando um ecossistema onde motoristas profissionais e passageiros se beneficiam de uma experiência superior.</p>
+                </div>
+                <div class="story-image">
+                    <img src="images/story-image.png" alt="História da Táxi Digital">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-logo">
+                    <img src="images/logo-white.png" alt="Táxi Digital Logo">
+                    <p>Transformando a mobilidade urbana com tecnologia white label de ponta.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Mapa do Site</h4>
+                    <ul>
+                        <li><a href="#">Produtos</a></li>
+                        <li><a href="#">Indústrias</a></li>
+                        <li><a href="#">Recursos</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i>Rua Henrique Sertorio, 564 Tatuape São Paulo - SP</li>
+                        <li><i class="fas fa-phone"></i> (11) 3090-2929</li>
+                        <li><i class="fas fa-envelope"></i> atendimento@taxidigital.net</li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/taxidigital"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/taxidigitaloficial/"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-policies">
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                    <a href="#">Política de Cookies</a>
+                </div>
+                <div class="footer-copyright">
+                    <p>© 2025 Táxi Digital. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
